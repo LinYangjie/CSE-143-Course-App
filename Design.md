@@ -18,7 +18,7 @@ every quarter and one of the assessments are also implementing the search engine
 simulate the search engine. Then we found out adding search partner features for a certain class is cool and useful, since
 if we want to ask someone privately by directly email them or text them we could just check who is also in this course and try to reach out to them by the student database info.
 
-**Design of Different Classes && Function Implementation:**
+**Design of Different Classes && Function Implementation:**\
 &emsp; First we need to instantiate Student, Course.
 Student instance includes fields such as `FirstName`, `LastName`, `Email`, `Phone`, `studentId`.
 To record what courses do students took, we also add a `courselist` field, so that we could implement a findPartner in later searchEngine class.\
