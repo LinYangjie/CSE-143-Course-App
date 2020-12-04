@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b919d91-1143-435a-ba34-7eb1a0d1f699" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/CSE-143-Course-App.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CourseDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/CourseDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Design.md" beforeDir="false" afterPath="$PROJECT_DIR$/Design.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/StudentDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/randomStudent.csv" beforeDir="false" afterPath="$PROJECT_DIR$/resource/randomStudent.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

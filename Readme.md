@@ -33,7 +33,7 @@ Example: `create` `John` `Wick` `1234567` `232323232` `DontTouchmyDog@uw.edu` `N
   
 - search\
   this is a command for the user to search for courses relevant to the course topic
-  + command form `search <course>`
+  + command form **`search <course>`**
     * the `<course>` can have multiple tokens, but they each need a white space between them.
   
 Example: `search` `CSE` `143` will find the course, however `CSE143` will not find any relevant result
