@@ -6,7 +6,7 @@ CSE 143 Project : Design Decision & Implementation
 
 ![cse 143 uml-1](https://user-images.githubusercontent.com/50006786/101194012-3e737f80-3612-11eb-9ed2-82937c5b632f.png)
 
-**Preliminary Thought & Motivation**\
+**Preliminary Thought & Motivation:**\
 &emsp; At first, we were trying to design a simple application to save personal information. We then decided we wanted to make our application more useful overall. 
 We know that there are a lot of frameworks and ways to store different type of database not only in a standard RDBMS (Relational Database Management Systems) form but also in a JSON form which is a more flexible form. 
 Storing it in a JSON form meant we needed to write code in sequential query language which is beyond this course. 
