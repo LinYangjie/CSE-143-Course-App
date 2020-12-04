@@ -34,19 +34,19 @@ Example: `create` `John` `Wick` `1234567` `232323232` `DontTouchmyDog@uw.edu` `N
 - search\
   this is a command for the user to search for courses relevant to the course topic
   + command form `search <course>`
-    * the `<course>` can have multiple tokens but they each need a white space between them.
+    * the `<course>` can have multiple tokens, but they each need a white space between them.
   
 Example: `search` `CSE` `143` will find the course, however `CSE143` will not find any relevant result
 
 - addCourse\
   this is a command to add the course to a student's course list.
-    + command form `addCourse <id> <course>`
+    + command form **`addCourse <id> <course>`**
     
 Example: `addCourse` `1234567` `3052`
 
 - findPartner\
   this is a command to find students who are all taking the course represented by the course id.
-  + command form `findPartner <courseId> `
+  + command form **`findPartner <courseId>`**
     
 Example `findPartner` `3052` will show all the students who also take this 3052 *(CSE 143)* class.
 - quit\
@@ -57,7 +57,7 @@ Example `findPartner` `3052` will show all the students who also take this 3052 
   console. It will crash after printing out too many lines of result. 
   So, in order to see all the result we could change to a relatively smaller course database 
   which only includes about 160 courses in the cse department.
-    + command form `printCourse`
+    + command form **`printCourse`**
     + The way to change the database:
         we open the main file name `Main.java` and then we replace line 17\
       `private static final String COURSE_DATASET = "./resource/allCourse.csv";` to\
@@ -65,4 +65,4 @@ Example `findPartner` `3052` will show all the students who also take this 3052 
   
 - printStudent\
 this is a command to visualize all the students in the database.
-  + command form `printStudent`
+  + command form **`printStudent`**

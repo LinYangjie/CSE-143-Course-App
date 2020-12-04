@@ -28,11 +28,6 @@ public class CourseDatabase {
         courseIdMap.put(String.valueOf(courseIdMap.size()), course);
     }
 
-    // Returns the number of courses stored in the course database.
-    public int size() {
-        return courseCatalog.size();
-    }
-
     // Returns the course stored in the database corresponding to the given course identifier.
     public Course getCourse(String cid) {
         Course c = courseIdMap.get(cid);

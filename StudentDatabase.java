@@ -18,7 +18,7 @@ public class StudentDatabase {
     }
     
     // Adds a single person to the system given a name, id, phone, email, state, course
-    public void addPerson(String firstName, String lastName, String id, String phone, String email, String state, Set<String> set) { 
+    public void addStudent(String firstName, String lastName, String id, String phone, String email, String state, Set<String> set) {
       idMap.put(id, new Student(firstName, lastName, id, phone, email, state, set));
       usedEmail.add(email);
     }
@@ -30,7 +30,7 @@ public class StudentDatabase {
     }
 
     // Returns boolean depending if student already exist 
-    public boolean containsPerson(String id) {
+    public boolean containsStudent(String id) {
       return idMap.containsKey(id);
     }
 

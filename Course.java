@@ -5,53 +5,53 @@
 
 public class Course {
     // Fields store course related information
-    private final String Department;
-    private final String CourseNumber;
-    private final String CourseName;
-    private final String Cid; // course id field is a unique field.
+    private final String department;
+    private final String courseNumber;
+    private final String courseName;
+    private final String cid; // course id field is a unique field.
 
     //Constructs the course with the given department, course number, course name, course ID
     public Course(String dep, String CourseNumber, String CourseName, String Cid) {
-        this.Department = dep;
-        this.CourseNumber = CourseNumber;
-        this.CourseName = CourseName;
-        this.Cid = Cid;
+        this.department = dep;
+        this.courseNumber = CourseNumber;
+        this.courseName = CourseName;
+        this.cid = Cid;
     }
 
     //Getter: Returns department
     public String getDept() {
-        return Department;
+        return department;
     }
 
     //Getter: Returns course number
     public String getCourseNumber() {
-        return CourseNumber;
+        return courseNumber;
     }
 
     //Getter: Returns course name
     public String getCourseName() {
-        return CourseName;
+        return courseName;
     }
 
     //Getter: Returns course ID
     public String getCid() {
-        return Cid;
+        return cid;
     }
 
     //Returns boolean depending if content is found 
     public boolean find(String content) {
-        return (Department.toLowerCase().contains(content) 
-                || CourseNumber.toLowerCase().contains(content)
-                || CourseName.toLowerCase().contains(content)
-                || Cid.contains(content));        
+        return (department.toLowerCase().contains(content) 
+                || courseNumber.toLowerCase().contains(content)
+                || courseName.toLowerCase().contains(content)
+                || cid.contains(content));        
     }
 
     // Returns a string representation of the course consisting of all the course's information
     // on a single line, separated by spaces.
     public String toString() {
-        return "[Dept: " + Department 
-            + " CourseNumber: " + CourseNumber 
-            + " CourseName: " + CourseName 
-            + " CourseId: " + Cid + "]";
+        return "[Dept: " + department 
+            + " CourseNumber: " + courseNumber 
+            + " CourseName: " + courseName 
+            + " CourseId: " + cid + "]";
     }
 }

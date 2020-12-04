@@ -29,19 +29,9 @@ public class Main {
     //State must be 2-3 letters long, and only include letters A-Z
     private static final String STATE_PATTERN = "^[A-Z]{2,3}$"; 
 
-    public static void main(String[] args) throws IOException {
-
-      // Initialization
-      CourseDatabase cd = new CourseDatabase();
-      insertCourseData(cd);
-      StudentDatabase sd = new StudentDatabase();
-      insertStudentData(sd);
-      SearchEngine se = new SearchEngine(cd, sd);
-      menu(sd, cd, se);
-    }
-
     // Menu functionality
     // provide a interface for users to interact with the database 
+    // citation: CSE 414 Introduction to Database System
     private static void menu(StudentDatabase sd, CourseDatabase cd, SearchEngine se) throws IOException {
       while (true) {
         System.out.println();
@@ -68,6 +58,7 @@ public class Main {
     }
 
     // Tokenizes a given user input
+    // citation: CSE 414 Introduction to Database System
     public static String[] tokenize(String command) {
       Matcher m = Pattern.compile(COMMAND_PATTERN).matcher(command);
       List<String> tokens = new ArrayList<>();
@@ -80,6 +71,7 @@ public class Main {
     }
 
     // To execute variety of known commands includes all the command in the menu
+    // citation: CSE 414 Introduction to Database System
     public static String execute(StudentDatabase sd, CourseDatabase cd, SearchEngine se, String command) {
       String[] tokens = tokenize(command.trim());
       String response;
@@ -96,7 +88,7 @@ public class Main {
           String state = tokens[6];
           String validation = checkValidation(firstName, lastName, id, email, state, sd);
           if (validation.equals("user " + firstName + " " + lastName + " has been created")) {
-            sd.addPerson(firstName, lastName, id, phoneNumber, email, state, new HashSet<>());
+            sd.addStudent(firstName, lastName, id, phoneNumber, email, state, new HashSet<>());
             writeCSV(firstName, lastName, id, phoneNumber, email, state);
           }
           response = validation;
@@ -116,14 +108,14 @@ public class Main {
         if (tokens.length == 3) {
           String id = tokens[1];
           String cid = tokens[2];
-          if (idValid(id) && sd.containsPerson(id) && cd.containsCourse(cid)) {
+          if (idValid(id) && sd.containsStudent(id) && cd.containsCourse(cid)) {
              sd.addCourse(id, cid);
              updateCSV(sd);
              response = "Course:" + cd.getCourse(cid).getDept() + cd.getCourse(cid).getCourseNumber()
                       + " \"" + cd.getCourse(cid).getCourseName() + "\" has been added to your courseList";
           } else if (!idValid(id)) {
             response = "invalid id form";
-          } else if (!sd.containsPerson(id)) {
+          } else if (!sd.containsStudent(id)) {
             response = "person not found";            
           } else if (!cd.containsCourse(cid)) {
             response = "course not found";
@@ -165,7 +157,7 @@ public class Main {
     
     // Checks if given name, id, email, state are all valid
     private static String checkValidation(String firstName, String lastName, String id, String email, String state, StudentDatabase sd) {
-      if (sd.containsPerson(id)) {
+      if (sd.containsStudent(id)) {
         return "id: " + id + " has been used";
       }
 
@@ -235,7 +227,7 @@ public class Main {
               set.add(result[i]);
             }
           }
-          sd.addPerson(name[0], name[1], result[1], result[2], result[3], result[4], set);
+          sd.addStudent(name[0], name[1], result[1], result[2], result[3], result[4], set);
           
         }
         br.close();
@@ -309,6 +301,17 @@ public class Main {
         count++;
       }
       return sb.toString();
+    }
+
+    public static void main(String[] args) throws IOException {
+
+      // Initialization
+      CourseDatabase cd = new CourseDatabase();
+      insertCourseData(cd);
+      StudentDatabase sd = new StudentDatabase();
+      insertStudentData(sd);
+      SearchEngine se = new SearchEngine(cd, sd);
+      menu(sd, cd, se);
     }
 }
 
