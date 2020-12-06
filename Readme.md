@@ -1,9 +1,10 @@
-CSE 143 Project User Guide
+CSE 143 Project: Course Helper App -  User Guide
 ===
 
 ![image](https://user-images.githubusercontent.com/50006786/101043459-3395ed80-3533-11eb-8920-486b57bd5ec9.png)
 
-
+**Description:**\
+This is a console based course helper app which help students to search for courses and find their partner. 
 
 **Requirements:**\
 This project is written completely in java code, you can execute this project either on Ed CSE 143 workSpace or 
