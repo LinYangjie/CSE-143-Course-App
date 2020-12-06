@@ -1,5 +1,5 @@
 
-CSE 143 Project : Design Decision & Implementation
+CSE 143 Project : Course Helper App - Design Decision & Implementation
 ===
 
 ### Author: Yangjie Lin, Ryan Smit, Jason Zheng
