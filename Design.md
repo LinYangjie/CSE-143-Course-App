@@ -9,7 +9,7 @@ CSE 143 Project : Design Decision & Implementation
 **Preliminary Thought & Motivation:**\
 &emsp; At first, we were trying to design a simple application to save personal information. We then decided we wanted to make our application more useful overall. 
 We know that there are a lot of frameworks and ways to store different type of database not only in a standard RDBMS (Relational Database Management Systems) form but also in a JSON form which is a more flexible form. 
-Storing it in a JSON form meant we needed to write code in sequential query language which is beyond this course. 
+We needed to write code in sequential query language which is beyond this course. 
 So we ended up storing information in a naive way and read those databases from raw files, such as text and CSV files. 
 It may not be good management on storing databases by reading/writing a local file if we are looking to scale or run a big system, but this is a good way to utilize what we have learned in this class.\
 &emsp; As for the problem, we are looking to solve it by finding a way to interact between different database storage.
