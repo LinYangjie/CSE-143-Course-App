@@ -16,7 +16,7 @@ Every quarter at UW, we use a search engine to search classes by SLN codes, cour
 **Design of Different Classes & Function Implementation:**\
 &emsp; First we need to instantiate Student and Course.
 Student instance includes fields such as `firstName`, `lastName`, `email`, `phone`, `id`, `state` .
-To record what courses students were taking, we also add a `courselist` field, so that we could implement a findPartner searchEngine class.\
+To record what courses students were taking, we also add a `courselist` field, so that we could implement a findPartner method of a searchEngine class.\
 &emsp; From the aspect of designing the database, we hope the information we store in the StudentDatabase has some restrictions without confusion. We add some restrictions for checking to see if the clients input is in similar fashion of how we defined a primary key to ensure unique fields when we create
 a table in the database system.\
 &emsp; For StudentDatabase class, we are adding courses in our database. For example, when we are saving the course to the student's course list field,
