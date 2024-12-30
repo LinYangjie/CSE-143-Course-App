@@ -30,3 +30,6 @@ So the first course we put in the courseDatabase will be 1 and so on.\
 &emsp; For the search engine, it is just using the information from the student database and course database to get matched results.\
 &emsp; For the main interface, it is combining code reference to CSE 414, which is the course one of our teammates previously have taken,
 and a method to restrict user type in a pattern, and a method of how to read info from CSV files.
+
+
+Add new design to master
